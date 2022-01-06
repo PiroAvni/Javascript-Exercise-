@@ -81,3 +81,35 @@ const calcTempAmplitude = function (temps) {
 
 // 2) Breaking up into sub-problems with
 // - Merge 2 arrays
+ // CONCAT EXAMPLE
+
+//  const array1 = ['a', 'b', 'c'];
+//  const array2 = ['d', 'e', 'f'];
+//  const array3 = array1.concat(array2);
+
+
+
+const calcTempAmplitudeNew = function (t1, t2) {
+  const temps = t1.concat(t2); // concat merge 2 or more arrays
+
+  console.log(temps);
+
+  let max = temps [0]; // decaring the first element of the array as a max temp - assume the maximum value of the array is the first element
+  let min = temps [0]; // decaring the first element of the array as a min temp - assume the minium value of the array is the first element
+
+  for (let i = 0; i < temps.length; i++) { // loop through the array or over the array - start ar 0, element in the array must be less then the length of the array and increments by 1
+
+    const curTemp = temps[i]; // decalring an curTemp variable that is equal to temps
+
+    if(typeof curTemp !== 'number') continue;
+
+    if (curTemp  > max) max = curTemp; // an iteration test  the current value  in the array  is greater than the maximum value - if it is then the new maximum value is stored -if NOT it is ignonored and moves on to the next array value
+
+    if (curTemp  < min) min = curTemp; // an iteration test the current value in the array if it  is less than the minium value  - if it is then the new minium value is stored - if NOT it is ignonored and moves on to the next array value
+  }
+  console.log(max, min);// out puts the data
+  return max - min;
+};
+   
+   const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0 ,5]);//  store the results in to a variable an array of values
+   console.log(amplitudeNew);
