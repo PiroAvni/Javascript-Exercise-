@@ -63,11 +63,11 @@ const calcTempAmplitude = function (temps) {
     if (curTemp  < min) min = curTemp; // an iteration test the current value in the array if it  is less than the minium value  - if it is then the new minium value is stored - if NOT it is ignonored and moves on to the next array value
   }
   console.log(max, min);// out puts the data
-  
+  return max - min;
 };
-  calcTempAmplitude([3, 7, 4, 1, 9, 8]); // an array of values
-  calcTempAmplitude(temperature);
-
+   
+   const amplitude = calcTempAmplitude(temperature);//  store the results in to a variable an array of values
+  console.log(amplitude);
 // begining - before the loop starts - the Max value would be 3 ( the first element of the array)
 // the loops begins - is 7  the second element in the array) greater > than the pervious max(3) = yes 
 //  7 ( the second element in the array) is the new max ( max = temps [i])
