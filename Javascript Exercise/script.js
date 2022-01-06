@@ -55,7 +55,6 @@ const calcTempAmplitude = function (temps) {
     if(temps [i] > max) max = temps [i];
   }
   console.log(max);
+};
   calcTempAmplitude([3, 7, 4]);
 
-  }
-};
