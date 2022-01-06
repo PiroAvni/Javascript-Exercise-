@@ -49,19 +49,19 @@ const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 
 const calcTempAmplitude = function (temps) {
-  let max = temps [0];
-  let min = temps [0];
+  let max = temps [0]; // decaring the first element of the array as a max temp - assume the maximum value of the array is the first element
+  let min = temps [0]; // decaring the first element of the array as a min temp - assume the minium value of the array is the first element
 
-  for (let i = 0; i < temps.length; i++) {
-    const curTemp = temps[i];
+  for (let i = 0; i < temps.length; i++) { // loop through the array or over the array - start ar 0, element in the array must be less then the length of the array and increments by 1
+    const curTemp = temps[i]; // decalring an curTemp variable that is equal to temps
 
-    if (curTemp  > max) max = curTemp ; // is the current 
-    if (curTemp  < min) min = curTemp ;
+    if (curTemp  > max) max = curTemp ; // an iteration test  the current value  in the array  is greater than the maximum value - if it is then the new maximum value is stored
+    if (curTemp  < min) min = curTemp ;// an iteration test  the current value  in the array  is greater than the minium value - if it is then the new minium value is stored
   }
   console.log(max, min);
   
 };
-  calcTempAmplitude([3, 7, 4, 1, 8]);
+  calcTempAmplitude([3, 7, 4, 1, 9, 8]); // an array of values
 
 // begining - before the loop starts - the Max value would be 3 ( the first element of the array)
 // the loops begins - is 7  the second element in the array) greater > than the pervious max(3) = yes 
