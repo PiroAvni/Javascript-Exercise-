@@ -74,7 +74,7 @@ const calcTempAmplitude = function (temps) {
 
 
 // PROBLEM - 2
-// FUNCTION SHOW NOW  RECEIVE 2 ARRAYS OF TEMPS
+// FUNCTION SHOULD NOW  RECEIVE 2 ARRAYS OF TEMPS
 
 // 1) Understanding the problem
 // - With 2 arrays, should we implement functionality twice? NO! just merge two arrays
