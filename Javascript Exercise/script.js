@@ -31,7 +31,7 @@
 // }
 
 /// Exercise 2
-
+// PROBLEM - 1
 // We work for a company building a smart home thermometer. Our most recent task is this: " Given an array of temperatures of the day, calculate the temperature ampltude. Keep in mind that sometimes there might be a sensor error."
 
 const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
@@ -67,7 +67,17 @@ const calcTempAmplitude = function (temps) {
 };
    
    const amplitude = calcTempAmplitude(temperature);//  store the results in to a variable an array of values
-  console.log(amplitude);
+   console.log(amplitude);
 // begining - before the loop starts - the Max value would be 3 ( the first element of the array)
 // the loops begins - is 7  the second element in the array) greater > than the pervious max(3) = yes 
 //  7 ( the second element in the array) is the new max ( max = temps [i])
+
+
+// PROBLEM - 2
+// FUNCTION SHOW NOW  RECEIVE 2 ARRAYS OF TEMPS
+
+// 1) Understanding the problem
+// - With 2 arrays, should we implement functionality twice? NO! just merge two arrays
+
+// 2) Breaking up into sub-problems with
+// - Merge 2 arrays
